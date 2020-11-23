@@ -66,9 +66,9 @@ class Affilies
         return $this->created;
     }
 
-    public function setCreated(\DateTimeInterface $created): self
+    public function setCreated(\DateTimeInterface $create): self
     {
-        $this->created = $created;
+        $this->created = $create;
 
         return $this;
     }
