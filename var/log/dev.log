@@ -305,3 +305,6 @@
 [2020-11-23T16:06:55.107028+01:00] request.INFO: Matched route "home". {"route":"home","route_parameters":{"_route":"home","_controller":"App\\Controller\\HomeController::index"},"request_uri":"http://localhost:8000/","method":"GET"} []
 [2020-11-23T16:06:55.172023+01:00] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
 [2020-11-23T16:06:55.394952+01:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"a40f5a"},"request_uri":"http://localhost:8000/_wdt/a40f5a","method":"GET"} []
+[2020-11-23T16:52:11.355961+01:00] request.INFO: Matched route "home". {"route":"home","route_parameters":{"_route":"home","_controller":"App\\Controller\\HomeController::index"},"request_uri":"http://localhost:8000/","method":"GET"} []
+[2020-11-23T16:52:11.455091+01:00] security.INFO: Populated the TokenStorage with an anonymous Token. [] []
+[2020-11-23T16:52:11.661433+01:00] request.INFO: Matched route "_wdt". {"route":"_wdt","route_parameters":{"_route":"_wdt","_controller":"web_profiler.controller.profiler::toolbarAction","token":"1688c4"},"request_uri":"http://localhost:8000/_wdt/1688c4","method":"GET"} []

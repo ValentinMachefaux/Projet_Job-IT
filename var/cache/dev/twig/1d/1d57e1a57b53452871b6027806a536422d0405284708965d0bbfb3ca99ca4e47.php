@@ -66,13 +66,16 @@ class __TwigTemplate_654033f97bee63545cb4e48a7e0d859e2f106fd4b4cb070e1c38c503c2b
         // line 18
         $this->displayBlock('body', $context, $blocks);
         // line 23
-        echo "
+        echo "    
         ";
         // line 24
         $this->displayBlock('javascripts', $context, $blocks);
         // line 25
         echo "
     </body>
+    <footer><a href=\"#\">A peropos</a>
+    <a href=\"#\">Job-IT-API</a>
+    <a href=\"#\">Partenaire particuiler</a></footer>
 </html>
 ";
         
@@ -179,7 +182,7 @@ class __TwigTemplate_654033f97bee63545cb4e48a7e0d859e2f106fd4b4cb070e1c38c503c2b
 
     public function getDebugInfo()
     {
-        return array (  158 => 24,  145 => 19,  135 => 18,  122 => 11,  118 => 10,  115 => 9,  105 => 8,  87 => 6,  74 => 25,  72 => 24,  69 => 23,  67 => 18,  61 => 14,  59 => 8,  54 => 6,  47 => 1,);
+        return array (  161 => 24,  148 => 19,  138 => 18,  125 => 11,  121 => 10,  118 => 9,  108 => 8,  90 => 6,  74 => 25,  72 => 24,  69 => 23,  67 => 18,  61 => 14,  59 => 8,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -206,10 +209,13 @@ class __TwigTemplate_654033f97bee63545cb4e48a7e0d859e2f106fd4b4cb070e1c38c503c2b
         
     
         {% endblock %}
-
+    
         {% block javascripts %}{% endblock %}
 
     </body>
+    <footer><a href=\"#\">A peropos</a>
+    <a href=\"#\">Job-IT-API</a>
+    <a href=\"#\">Partenaire particuiler</a></footer>
 </html>
 ", "base.html.twig", "/Users/s29/Desktop/Projet-Job-IT/templates/base.html.twig");
     }
