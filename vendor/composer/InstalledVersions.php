@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '535c733fe64affbfbfa559d61d9071853321bcf2',
+    'reference' => '67dc837c134d96de04d1ae8e022ce5d2a937a213',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '535c733fe64affbfbfa559d61d9071853321bcf2',
+      'reference' => '67dc837c134d96de04d1ae8e022ce5d2a937a213',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -186,6 +186,33 @@ private static $installed = array (
       ),
       'reference' => 'ca90a3291eee1538cd48ff25163240695bd95448',
     ),
+    'laminas/laminas-code' => 
+    array (
+      'pretty_version' => '3.5.0',
+      'version' => '3.5.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'cb90ef428da9260c2deaa827b037c20695f968ae',
+    ),
+    'laminas/laminas-eventmanager' => 
+    array (
+      'pretty_version' => '3.3.0',
+      'version' => '3.3.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1940ccf30e058b2fd66f5a9d696f1b5e0027b082',
+    ),
+    'laminas/laminas-zendframework-bridge' => 
+    array (
+      'pretty_version' => '1.1.1',
+      'version' => '1.1.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '6ede70583e101030bcace4dcddd648f760ddf642',
+    ),
     'monolog/monolog' => 
     array (
       'pretty_version' => '2.1.1',
@@ -213,12 +240,12 @@ private static $installed = array (
     ),
     'ocramius/proxy-manager' => 
     array (
-      'pretty_version' => '2.2.3',
-      'version' => '2.2.3.0',
+      'pretty_version' => '2.10.0',
+      'version' => '2.10.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4d154742e31c35137d5374c998e8f86b54db2e2f',
+      'reference' => 'f65ae0f9dcbdd9d6ad3abb721a9e09c3d7d868a4',
     ),
     'paragonie/random_compat' => 
     array (
@@ -1052,6 +1079,15 @@ private static $installed = array (
       ),
       'reference' => 'b02fa41f3783a2616eccef7b92fbc2343ffed737',
     ),
+    'webimpress/safe-writer' => 
+    array (
+      'pretty_version' => '2.1.0',
+      'version' => '2.1.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '5cfafdec5873c389036f14bf832a5efc9390dcdd',
+    ),
     'webmozart/assert' => 
     array (
       'pretty_version' => '1.9.1',
@@ -1063,21 +1099,17 @@ private static $installed = array (
     ),
     'zendframework/zend-code' => 
     array (
-      'pretty_version' => '3.4.1',
-      'version' => '3.4.1.0',
-      'aliases' => 
+      'replaced' => 
       array (
+        0 => '^3.4.1',
       ),
-      'reference' => '268040548f92c2bfcba164421c1add2ba43abaaa',
     ),
     'zendframework/zend-eventmanager' => 
     array (
-      'pretty_version' => '3.2.1',
-      'version' => '3.2.1.0',
-      'aliases' => 
+      'replaced' => 
       array (
+        0 => '^3.2.1',
       ),
-      'reference' => 'a5e2583a211f73604691586b8406ff7296a946dd',
     ),
   ),
 );
