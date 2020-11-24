@@ -335,10 +335,6 @@
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
     </service>
-    <service id="App\Repository\CataffiliesRepository" class="App\Repository\CataffiliesRepository" autowire="true" autoconfigure="true">
-      <tag name="doctrine.repository_service"/>
-      <argument type="service" id="doctrine"/>
-    </service>
     <service id="App\Repository\CategoriesRepository" class="App\Repository\CategoriesRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>
       <argument type="service" id="doctrine"/>
@@ -3958,7 +3954,7 @@
       <factory class="Doctrine\ORM\EntityManager" method="create"/>
     </service>
     <service id="doctrine.orm.container_repository_factory" class="Doctrine\Bundle\DoctrineBundle\Repository\ContainerRepositoryFactory" public="false">
-      <argument type="service" id=".service_locator.Y2uxeBS"/>
+      <argument type="service" id=".service_locator.0TqkDPF"/>
     </service>
     <service id="doctrine.orm.manager_configurator.abstract" class="Doctrine\Bundle\DoctrineBundle\ManagerConfigurator" abstract="true">
       <argument type="collection"/>
@@ -4896,8 +4892,6 @@
     <service id=".abstract.instanceof.App\Controller\HomeController" class="App\Controller\HomeController" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\AffiliesRepository" class="App\Repository\AffiliesRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\AffiliesRepository" class="App\Repository\AffiliesRepository" autowire="true" autoconfigure="true" abstract="true"/>
-    <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CataffiliesRepository" class="App\Repository\CataffiliesRepository" autowire="true" abstract="true"/>
-    <service id=".abstract.instanceof.App\Repository\CataffiliesRepository" class="App\Repository\CataffiliesRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\CategoriesRepository" class="App\Repository\CategoriesRepository" autowire="true" abstract="true"/>
     <service id=".abstract.instanceof.App\Repository\CategoriesRepository" class="App\Repository\CategoriesRepository" autowire="true" autoconfigure="true" abstract="true"/>
     <service id=".instanceof.Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepositoryInterface.0.App\Repository\JobsRepository" class="App\Repository\JobsRepository" autowire="true" abstract="true"/>
@@ -5397,11 +5391,10 @@
         <argument key="doctrine.orm.default_listeners.attach_entity_listeners" type="service" id="doctrine.orm.default_listeners.attach_entity_listeners"/>
       </argument>
     </service>
-    <service id=".service_locator.Y2uxeBS" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
+    <service id=".service_locator.0TqkDPF" class="Symfony\Component\DependencyInjection\ServiceLocator" public="false">
       <tag name="container.service_locator"/>
       <argument type="collection">
         <argument key="App\Repository\AffiliesRepository" type="service" id="App\Repository\AffiliesRepository"/>
-        <argument key="App\Repository\CataffiliesRepository" type="service" id="App\Repository\CataffiliesRepository"/>
         <argument key="App\Repository\CategoriesRepository" type="service" id="App\Repository\CategoriesRepository"/>
         <argument key="App\Repository\JobsRepository" type="service" id="App\Repository\JobsRepository"/>
       </argument>

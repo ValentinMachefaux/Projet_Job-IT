@@ -72,15 +72,26 @@ class Jobs
      */
     private $updated;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $categoryId;
 
     /**
      * @ORM\Column(type="text", nullable=true)
      */
     private $postuler;
+
+    /**
+     * @ORM\ManyToOne(targetEntity=Categories::class, inversedBy="jobs")
+     */
+    private $categoryId;
+
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $token;
+
+    /**
+     * @ORM\Column(type="boolean")
+     */
+    private $active;
 
     public function getId(): ?int
     {
@@ -239,6 +250,30 @@ class Jobs
     public function setPostuler(?string $postuler): self
     {
         $this->postuler = $postuler;
+
+        return $this;
+    }
+
+    public function getToken(): ?string
+    {
+        return $this->token;
+    }
+
+    public function setToken(?string $token): self
+    {
+        $this->token = $token;
+
+        return $this;
+    }
+
+    public function getActive(): ?bool
+    {
+        return $this->active;
+    }
+
+    public function setActive(bool $active): self
+    {
+        $this->active = $active;
 
         return $this;
     }

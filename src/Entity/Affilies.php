@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\AffiliesRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -31,6 +33,16 @@ class Affilies
      * @ORM\Column(type="datetime")
      */
     private $created;
+
+    /**
+     * @ORM\ManyToMany(targetEntity=categories::class, inversedBy="affilies")
+     */
+    private $catId;
+
+    public function __construct()
+    {
+        $this->catId = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -69,6 +81,30 @@ class Affilies
     public function setCreated(\DateTimeInterface $create): self
     {
         $this->created = $create;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection|categories[]
+     */
+    public function getCatId(): Collection
+    {
+        return $this->catId;
+    }
+
+    public function addCatId(categories $catId): self
+    {
+        if (!$this->catId->contains($catId)) {
+            $this->catId[] = $catId;
+        }
+
+        return $this;
+    }
+
+    public function removeCatId(categories $catId): self
+    {
+        $this->catId->removeElement($catId);
 
         return $this;
     }
