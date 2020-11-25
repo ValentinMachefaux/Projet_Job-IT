@@ -25,7 +25,7 @@ class Categories
     private $nom;
 
     /**
-     * @ORM\OneToMany(targetEntity=Jobs::class, mappedBy="categorieId")
+     * @ORM\OneToMany(targetEntity=Jobs::class, mappedBy="categorie")
      */
     private $jobs;
 
