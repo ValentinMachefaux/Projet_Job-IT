@@ -81,7 +81,7 @@ class Jobs
     /**
      * @ORM\ManyToOne(targetEntity=Categories::class, inversedBy="jobs")
      */
-    private $categoryId;
+    private $categorie;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
@@ -230,14 +230,14 @@ class Jobs
         return $this;
     }
 
-    public function getCategoryId(): ?int
+    public function getcategorie(): ?int
     {
-        return $this->categoryId;
+        return $this->categorie;
     }
 
-    public function setCategoryId(int $categoryId): self
+    public function setcategorie(int $categorie): self
     {
-        $this->categoryId = $categoryId;
+        $this->categorie = $categorie;
 
         return $this;
     }

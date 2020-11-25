@@ -35,7 +35,7 @@ class Affilies
     private $created;
 
     /**
-     * @ORM\ManyToMany(targetEntity=categories::class, inversedBy="affilies")
+     * @ORM\ManyToMany(targetEntity=Categories::class, inversedBy="Affilies")
      */
     private $catId;
 

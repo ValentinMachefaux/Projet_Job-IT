@@ -25,7 +25,7 @@ class Categories
     private $nom;
 
     /**
-     * @ORM\OneToMany(targetEntity=Jobs::class, mappedBy="categoryId")
+     * @ORM\OneToMany(targetEntity=Jobs::class, mappedBy="categorieId")
      */
     private $jobs;
 
@@ -71,7 +71,7 @@ class Categories
     {
         if (!$this->jobs->contains($job)) {
             $this->jobs[] = $job;
-            $job->setCategoryId($this);
+            $job->setCategorie($this);
         }
 
         return $this;
@@ -81,8 +81,8 @@ class Categories
     {
         if ($this->jobs->removeElement($job)) {
             // set the owning side to null (unless already changed)
-            if ($job->getCategoryId() === $this) {
-                $job->setCategoryId(null);
+            if ($job->getCategorie() === $this) {
+                $job->setCategorie(null);
             }
         }
 

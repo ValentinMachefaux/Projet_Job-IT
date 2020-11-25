@@ -19,7 +19,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '67dc837c134d96de04d1ae8e022ce5d2a937a213',
+    'reference' => '694ba03f008e0346f59ad265756f3242c61f0080',
     'name' => '__root__',
   ),
   'versions' => 
@@ -31,7 +31,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '67dc837c134d96de04d1ae8e022ce5d2a937a213',
+      'reference' => '694ba03f008e0346f59ad265756f3242c61f0080',
     ),
     'composer/package-versions-deprecated' => 
     array (
@@ -177,6 +177,15 @@ private static $installed = array (
       ),
       'reference' => '56070bebac6e77230ed7d306ad13528e60732871',
     ),
+    'easycorp/easyadmin-bundle' => 
+    array (
+      'pretty_version' => 'v2.3.11',
+      'version' => '2.3.11.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '34f70c9e89ba9a0dda78b993347ffbd152d6c588',
+    ),
     'egulias/email-validator' => 
     array (
       'pretty_version' => '2.1.24',
@@ -246,6 +255,78 @@ private static $installed = array (
       array (
       ),
       'reference' => 'f65ae0f9dcbdd9d6ad3abb721a9e09c3d7d868a4',
+    ),
+    'pagerfanta/core' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/doctrine-collections-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/doctrine-dbal-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/doctrine-mongodb-odm-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/doctrine-orm-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/doctrine-phpcr-odm-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/elastica-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/pagerfanta' => 
+    array (
+      'pretty_version' => 'v2.5.1',
+      'version' => '2.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '92138595c5cb65e517e49f6fee71b89da134509e',
+    ),
+    'pagerfanta/solarium-adapter' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
+    ),
+    'pagerfanta/twig' => 
+    array (
+      'replaced' => 
+      array (
+        0 => 'v2.5.1',
+      ),
     ),
     'paragonie/random_compat' => 
     array (

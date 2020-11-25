@@ -4,4 +4,25 @@
 
 {% block body %}
 <h1>JOB-IT</h1>
+
+{% for job in jobs %}
+
+    <div class="card">
+        <img src="{{job.logo}}" alt="">
+
+        <div class="card-text-content">
+            <p>{{job.entreprise}}</p>
+            <p>{{job.contrat}}</p>
+            
+            <div class="card-text-content-2">
+                <p>{{job.lieu}}</p>
+                <p>{{job.pays}}</p>
+            </div>
+                        
+        </div>
+        
+    </div>
+
+{% endfor %}
+
 {% endblock %}

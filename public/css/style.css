@@ -10,3 +10,24 @@ nav input{
     width:25%;
     border-radius: 5px;
 }
+.card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin-bottom: 1%;
+    align-items: center;
+    border-radius: 20px;
+    border: solid black 1px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card-text-content{
+    width: 25%;
+}
+.card-text-content-2{
+    padding: 1%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
