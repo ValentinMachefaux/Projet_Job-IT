@@ -22,12 +22,36 @@ nav input{
     margin-left: auto;
     margin-right: auto;
 }
+.card a{
+    text-decoration: none;
+    color: black;
+}
 .card-text-content{
     width: 25%;
+    text-align: center;
 }
 .card-text-content-2{
     padding: 1%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    text-align: center;
+}
+.job-contrat{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.job-contrat,.h3-contrat,.lieu-contrat,.desc-contrat,.post-contrat{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hr-contrat{
+    width: 87%;    
+    padding-right: 1%;
+}
+.img-contrat{
+    width: 13%;
 }

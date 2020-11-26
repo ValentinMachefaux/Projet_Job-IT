@@ -613,13 +613,18 @@ class ComposerStaticInitb303b523f429f5b1fcb696020352c074
 
     public static $classMap = array (
         'App\\Controller\\HomeController' => __DIR__ . '/../..' . '/src/Controller/HomeController.php',
+        'App\\Controller\\JobController' => __DIR__ . '/../..' . '/src/Controller/JobController.php',
+        'App\\Controller\\SecurityController' => __DIR__ . '/../..' . '/src/Controller/SecurityController.php',
         'App\\Entity\\Affilies' => __DIR__ . '/../..' . '/src/Entity/Affilies.php',
         'App\\Entity\\Categories' => __DIR__ . '/../..' . '/src/Entity/Categories.php',
         'App\\Entity\\Jobs' => __DIR__ . '/../..' . '/src/Entity/Jobs.php',
+        'App\\Entity\\User' => __DIR__ . '/../..' . '/src/Entity/User.php',
         'App\\Kernel' => __DIR__ . '/../..' . '/src/Kernel.php',
         'App\\Repository\\AffiliesRepository' => __DIR__ . '/../..' . '/src/Repository/AffiliesRepository.php',
         'App\\Repository\\CategoriesRepository' => __DIR__ . '/../..' . '/src/Repository/CategoriesRepository.php',
         'App\\Repository\\JobsRepository' => __DIR__ . '/../..' . '/src/Repository/JobsRepository.php',
+        'App\\Repository\\UserRepository' => __DIR__ . '/../..' . '/src/Repository/UserRepository.php',
+        'App\\Security\\AuthAdminAuthenticator' => __DIR__ . '/../..' . '/src/Security/AuthAdminAuthenticator.php',
         'Attribute' => __DIR__ . '/..' . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
         'Collator' => __DIR__ . '/..' . '/symfony/intl/Resources/stubs/Collator.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',

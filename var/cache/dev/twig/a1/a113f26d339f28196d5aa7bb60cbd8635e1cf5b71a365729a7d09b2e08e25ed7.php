@@ -31,6 +31,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
             'stylesheets' => [$this, 'block_stylesheets'],
             'body' => [$this, 'block_body'],
             'javascripts' => [$this, 'block_javascripts'],
+            'footer' => [$this, 'block_footer'],
         ];
     }
 
@@ -61,24 +62,25 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
         echo "
     </head>
     <body>
-    <nav><input type=\"search\" placeholder=\"https://www.job-it.com\"></nav>
+        <nav><input type=\"search\" placeholder=\"https://www.job-it.com\"></nav>
+        <h1>JOB-IT</h1>
+        <input type=\"search\" name=\"\" id=\"\">
         ";
-        // line 18
+        // line 20
         $this->displayBlock('body', $context, $blocks);
-        // line 23
+        // line 22
         echo "    
         ";
-        // line 24
+        // line 23
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 25
+        // line 24
         echo "
     </body>
-    <footer>
-        <a href=\"#\">A peropos</a>
-        <a href=\"#\">Job-IT-API</a>
-        <a href=\"#\">Partenaire particulier</a>
-    </footer>
-</html>
+    ";
+        // line 26
+        $this->displayBlock('footer', $context, $blocks);
+        // line 33
+        echo "</html>
 ";
         
         $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
@@ -136,7 +138,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     }
 
-    // line 18
+    // line 20
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -146,11 +148,8 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 19
-        echo "
-        
-    
-        ";
+        // line 21
+        echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -159,7 +158,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     }
 
-    // line 24
+    // line 23
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -177,6 +176,34 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     }
 
+    // line 26
+    public function block_footer($context, array $blocks = [])
+    {
+        $macros = $this->macros;
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->enter($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
+
+        // line 27
+        echo "        <footer>
+            <a href=\"";
+        // line 28
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\">A peropos</a>
+            <a href=\"#\">Job-IT-API</a>
+            <a href=\"#\">Partenaire particulier</a>
+        </footer>
+    ";
+        
+        $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
+
+        
+        $__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e->leave($__internal_085b0142806202599c7fe3b329164a92397d8978207a37e79d70b8c52599e33e_prof);
+
+    }
+
     public function getTemplateName()
     {
         return "base.html.twig";
@@ -184,7 +211,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     public function getDebugInfo()
     {
-        return array (  163 => 24,  150 => 19,  140 => 18,  127 => 11,  123 => 10,  120 => 9,  110 => 8,  92 => 6,  74 => 25,  72 => 24,  69 => 23,  67 => 18,  61 => 14,  59 => 8,  54 => 6,  47 => 1,);
+        return array (  193 => 28,  190 => 27,  180 => 26,  162 => 23,  152 => 21,  142 => 20,  129 => 11,  125 => 10,  122 => 9,  112 => 8,  94 => 6,  83 => 33,  81 => 26,  77 => 24,  75 => 23,  72 => 22,  70 => 20,  62 => 14,  60 => 8,  55 => 6,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -205,21 +232,22 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     </head>
     <body>
-    <nav><input type=\"search\" placeholder=\"https://www.job-it.com\"></nav>
+        <nav><input type=\"search\" placeholder=\"https://www.job-it.com\"></nav>
+        <h1>JOB-IT</h1>
+        <input type=\"search\" name=\"\" id=\"\">
         {% block body %}
-
-        
-    
         {% endblock %}
     
         {% block javascripts %}{% endblock %}
 
     </body>
-    <footer>
-        <a href=\"#\">A peropos</a>
-        <a href=\"#\">Job-IT-API</a>
-        <a href=\"#\">Partenaire particulier</a>
-    </footer>
+    {% block footer %}
+        <footer>
+            <a href=\"{{path('home')}}\">A peropos</a>
+            <a href=\"#\">Job-IT-API</a>
+            <a href=\"#\">Partenaire particulier</a>
+        </footer>
+    {% endblock %}
 </html>
 ", "base.html.twig", "C:\\Users\\m\\Desktop\\Projet_Job-IT\\templates\\base.html.twig");
     }

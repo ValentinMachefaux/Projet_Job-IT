@@ -230,12 +230,12 @@ class Jobs
         return $this;
     }
 
-    public function getcategorie(): ?int
+    public function getCategorie(): ?Categories
     {
         return $this->categorie;
     }
 
-    public function setcategorie(int $categorie): self
+    public function setCategorie(?Categories $categorie): self
     {
         $this->categorie = $categorie;
 

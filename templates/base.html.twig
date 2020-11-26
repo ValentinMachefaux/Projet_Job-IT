@@ -14,19 +14,20 @@
 
     </head>
     <body>
-    <nav><input type="search" placeholder="https://www.job-it.com"></nav>
+        <nav><input type="search" placeholder="https://www.job-it.com"></nav>
+        <h1>JOB-IT</h1>
+        <input type="search" name="" id="">
         {% block body %}
-
-        
-    
         {% endblock %}
     
         {% block javascripts %}{% endblock %}
 
     </body>
-    <footer>
-        <a href="#">A peropos</a>
-        <a href="#">Job-IT-API</a>
-        <a href="#">Partenaire particulier</a>
-    </footer>
+    {% block footer %}
+        <footer>
+            <a href="{{path('home')}}">A peropos</a>
+            <a href="#">Job-IT-API</a>
+            <a href="#">Partenaire particulier</a>
+        </footer>
+    {% endblock %}
 </html>

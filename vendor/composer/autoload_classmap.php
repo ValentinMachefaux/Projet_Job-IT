@@ -7,13 +7,18 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'App\\Controller\\HomeController' => $baseDir . '/src/Controller/HomeController.php',
+    'App\\Controller\\JobController' => $baseDir . '/src/Controller/JobController.php',
+    'App\\Controller\\SecurityController' => $baseDir . '/src/Controller/SecurityController.php',
     'App\\Entity\\Affilies' => $baseDir . '/src/Entity/Affilies.php',
     'App\\Entity\\Categories' => $baseDir . '/src/Entity/Categories.php',
     'App\\Entity\\Jobs' => $baseDir . '/src/Entity/Jobs.php',
+    'App\\Entity\\User' => $baseDir . '/src/Entity/User.php',
     'App\\Kernel' => $baseDir . '/src/Kernel.php',
     'App\\Repository\\AffiliesRepository' => $baseDir . '/src/Repository/AffiliesRepository.php',
     'App\\Repository\\CategoriesRepository' => $baseDir . '/src/Repository/CategoriesRepository.php',
     'App\\Repository\\JobsRepository' => $baseDir . '/src/Repository/JobsRepository.php',
+    'App\\Repository\\UserRepository' => $baseDir . '/src/Repository/UserRepository.php',
+    'App\\Security\\AuthAdminAuthenticator' => $baseDir . '/src/Security/AuthAdminAuthenticator.php',
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Collator' => $vendorDir . '/symfony/intl/Resources/stubs/Collator.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',

@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}One job{% endblock %}
+
+{% block body %}
+    <h3 class="h3-contrat">{{job.entreprise}}</h3>
+    <p class="lieu-contrat">{{job.lieu}} - {{job.pays}}</p>
+    <div class="job-contrat">
+        <div class="hr-contrat">
+            <hr>
+            <h2>{{job.contrat}}</h2>
+            <hr>
+        </div>    
+        <img src="{{job.logo}}" alt="" class="img-contrat">
+    </div>
+    <p class="desc-contrat">{{job.description}}</p>
+    <p class="post-contrat">Pour postuler veuillez envoyer cv + lettre de motivation à {{job.email}}</p>
+{% endblock %}
