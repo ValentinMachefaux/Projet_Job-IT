@@ -97,17 +97,12 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
             echo "
     
     <div class=\"card\">
-        <a href=\"";
-            // line 13
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("job");
-            echo "?id=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "id", [], "any", false, false, false, 13), "html", null, true);
-            echo "\">
+        
             <img src=\"";
             // line 14
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "logo", [], "any", false, false, false, 14), "html", null, true);
             echo "\" alt=\"\">
-        </a>
+        
         <div class=\"card-text-content\">
             <p>";
             // line 17
@@ -127,6 +122,12 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
             // line 22
             echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "pays", [], "any", false, false, false, 22), "html", null, true);
             echo "</p>
+                <a href=\"";
+            // line 23
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("job");
+            echo "?id=";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "id", [], "any", false, false, false, 23), "html", null, true);
+            echo "\" class=\"btn\">En savoir plus ?</a>
             </div>
         </div>
         
@@ -137,7 +138,7 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['job'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 29
+        // line 30
         echo "
 ";
         
@@ -160,7 +161,7 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
 
     public function getDebugInfo()
     {
-        return array (  141 => 29,  128 => 22,  124 => 21,  118 => 18,  114 => 17,  108 => 14,  102 => 13,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  142 => 30,  127 => 23,  123 => 22,  119 => 21,  113 => 18,  109 => 17,  103 => 14,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -177,9 +178,9 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
 
     
     <div class=\"card\">
-        <a href=\"{{ path('job') }}?id={{job.id}}\">
+        
             <img src=\"{{job.logo}}\" alt=\"\">
-        </a>
+        
         <div class=\"card-text-content\">
             <p>{{job.entreprise}}</p>
             <p>{{job.contrat}}</p>
@@ -187,6 +188,7 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
             <div class=\"card-text-content-2\">
                 <p>{{job.lieu}}</p>
                 <p>{{job.pays}}</p>
+                <a href=\"{{ path('job') }}?id={{job.id}}\" class=\"btn\">En savoir plus ?</a>
             </div>
         </div>
         

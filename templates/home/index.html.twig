@@ -10,9 +10,9 @@
 
     
     <div class="card">
-        <a href="{{ path('job') }}?id={{job.id}}">
+        
             <img src="{{job.logo}}" alt="">
-        </a>
+        
         <div class="card-text-content">
             <p>{{job.entreprise}}</p>
             <p>{{job.contrat}}</p>
@@ -20,6 +20,7 @@
             <div class="card-text-content-2">
                 <p>{{job.lieu}}</p>
                 <p>{{job.pays}}</p>
+                <a href="{{ path('job') }}?id={{job.id}}" class="btn">En savoir plus ?</a>
             </div>
         </div>
         
