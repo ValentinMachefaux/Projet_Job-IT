@@ -15,6 +15,8 @@ return [
     '_profiler_router' => [['token'], ['_controller' => 'web_profiler.controller.router::panelAction'], [], [['text', '/router'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::body'], [], [['text', '/exception'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
     '_profiler_exception_css' => [['token'], ['_controller' => 'web_profiler.controller.exception_panel::stylesheet'], [], [['text', '/exception.css'], ['variable', '/', '[^/]++', 'token', true], ['text', '/_profiler']], [], []],
+    'categories' => [[], ['_controller' => 'App\\Controller\\CategorieController::index'], [], [['text', '/categories']], [], []],
+    'categorie' => [[], ['_controller' => 'App\\Controller\\CategorieController::categ'], [], [['text', '/categorie']], [], []],
     'form_job' => [[], ['_controller' => 'App\\Controller\\FormJobController::index'], [], [['text', '/newJob']], [], []],
     'home' => [[], ['_controller' => 'App\\Controller\\HomeController::index'], [], [['text', '/']], [], []],
     'job' => [[], ['_controller' => 'App\\Controller\\JobController::index'], [], [['text', '/job']], [], []],

@@ -63,23 +63,34 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
     </head>
     <body>
         <nav><input type=\"search\" placeholder=\"https://www.job-it.com\"></nav>
-        <h1>JOB-IT</h1>
+        <h1 class=\"jobit\"><a href=\"";
+        // line 18
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
+        echo "\" class=\"a-base\">JOB-IT</a></h1>
         <input type=\"search\" name=\"\" id=\"\">
-        ";
+        <a href=\"";
         // line 20
-        $this->displayBlock('body', $context, $blocks);
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("categories");
+        echo "\" class=\"\">Categories</a>
+        <a href=\"";
+        // line 21
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("form_job");
+        echo "\" class=\"poste-job\">Poster un job</a>
+        ";
         // line 22
+        $this->displayBlock('body', $context, $blocks);
+        // line 24
         echo "    
         ";
-        // line 23
+        // line 25
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 24
+        // line 26
         echo "
     </body>
     ";
-        // line 26
+        // line 28
         $this->displayBlock('footer', $context, $blocks);
-        // line 33
+        // line 35
         echo "</html>
 ";
         
@@ -138,7 +149,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     }
 
-    // line 20
+    // line 22
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -148,7 +159,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 21
+        // line 23
         echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
@@ -158,7 +169,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     }
 
-    // line 23
+    // line 25
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -176,7 +187,7 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
 
     }
 
-    // line 26
+    // line 28
     public function block_footer($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -186,10 +197,10 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "footer"));
 
-        // line 27
+        // line 29
         echo "        <footer>
             <a href=\"";
-        // line 28
+        // line 30
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("home");
         echo "\">A peropos</a>
             <a href=\"#\">Job-IT-API</a>
@@ -209,9 +220,14 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
         return "base.html.twig";
     }
 
+    public function isTraitable()
+    {
+        return false;
+    }
+
     public function getDebugInfo()
     {
-        return array (  193 => 28,  190 => 27,  180 => 26,  162 => 23,  152 => 21,  142 => 20,  129 => 11,  125 => 10,  122 => 9,  112 => 8,  94 => 6,  83 => 33,  81 => 26,  77 => 24,  75 => 23,  72 => 22,  70 => 20,  62 => 14,  60 => 8,  55 => 6,  48 => 1,);
+        return array (  204 => 30,  201 => 29,  191 => 28,  173 => 25,  163 => 23,  153 => 22,  140 => 11,  136 => 10,  133 => 9,  123 => 8,  105 => 6,  94 => 35,  92 => 28,  88 => 26,  86 => 25,  83 => 24,  81 => 22,  77 => 21,  73 => 20,  68 => 18,  62 => 14,  60 => 8,  55 => 6,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -233,8 +249,10 @@ class __TwigTemplate_fb992b06ed72614187d554e1339feadafae57240614de59d9286aff42d3
     </head>
     <body>
         <nav><input type=\"search\" placeholder=\"https://www.job-it.com\"></nav>
-        <h1>JOB-IT</h1>
+        <h1 class=\"jobit\"><a href=\"{{path('home')}}\" class=\"a-base\">JOB-IT</a></h1>
         <input type=\"search\" name=\"\" id=\"\">
+        <a href=\"{{path('categories')}}\" class=\"\">Categories</a>
+        <a href=\"{{path('form_job')}}\" class=\"poste-job\">Poster un job</a>
         {% block body %}
         {% endblock %}
     

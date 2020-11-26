@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello CategorieController!{% endblock %}
+
+{% block body %}
+
+    {% for categ in categs %}
+
+        <p>{{categ.contrat}}</p>
+        <p>{{categ.entreprise}}</p>
+        <a href="{{ path('job') }}?id={{categ.id}}">En savoir plus...</a>
+        <hr>
+    {% endfor %}
+
+{% endblock %}

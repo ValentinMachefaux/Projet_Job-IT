@@ -15,8 +15,10 @@
     </head>
     <body>
         <nav><input type="search" placeholder="https://www.job-it.com"></nav>
-        <h1>JOB-IT</h1>
+        <h1 class="jobit"><a href="{{path('home')}}" class="a-base">JOB-IT</a></h1>
         <input type="search" name="" id="">
+        <a href="{{path('categories')}}" class="">Categories</a>
+        <a href="{{path('form_job')}}" class="poste-job">Poster un job</a>
         {% block body %}
         {% endblock %}
     

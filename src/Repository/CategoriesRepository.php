@@ -4,6 +4,7 @@ namespace App\Repository;
 
 use App\Entity\Categories;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
+use Doctrine\ORM\EntityManagerInterface;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
@@ -35,7 +36,16 @@ class CategoriesRepository extends ServiceEntityRepository
         ;
     }
     */
-
+    public function jointure($value)
+    {
+        $conn = $this->getEntityManager();
+        $sql=$conn-> createQuery('
+                SELECT oe FROM App\Entity\Jobs oe
+                INNER JOIN App\Entity\Categories o WITH oe.categorie = o.id 
+                WHERE o.id ='.$value
+            );
+        return $sql->getResult();
+    }
     /*
     public function findOneBySomeField($value): ?Categories
     {

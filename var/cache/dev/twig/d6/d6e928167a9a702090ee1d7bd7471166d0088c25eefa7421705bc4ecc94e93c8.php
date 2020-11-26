@@ -87,44 +87,45 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
         // line 6
         echo "
 
+
 ";
-        // line 8
+        // line 9
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["jobs"]) || array_key_exists("jobs", $context) ? $context["jobs"] : (function () { throw new RuntimeError('Variable "jobs" does not exist.', 8, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["jobs"]) || array_key_exists("jobs", $context) ? $context["jobs"] : (function () { throw new RuntimeError('Variable "jobs" does not exist.', 9, $this->source); })()));
         foreach ($context['_seq'] as $context["_key"] => $context["job"]) {
-            // line 9
+            // line 10
             echo "
     
     <div class=\"card\">
         <a href=\"";
-            // line 12
+            // line 13
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("job");
             echo "?id=";
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "id", [], "any", false, false, false, 12), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "id", [], "any", false, false, false, 13), "html", null, true);
             echo "\">
             <img src=\"";
-            // line 13
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "logo", [], "any", false, false, false, 13), "html", null, true);
+            // line 14
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "logo", [], "any", false, false, false, 14), "html", null, true);
             echo "\" alt=\"\">
         </a>
         <div class=\"card-text-content\">
             <p>";
-            // line 16
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "entreprise", [], "any", false, false, false, 16), "html", null, true);
+            // line 17
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "entreprise", [], "any", false, false, false, 17), "html", null, true);
             echo "</p>
             <p>";
-            // line 17
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "contrat", [], "any", false, false, false, 17), "html", null, true);
+            // line 18
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "contrat", [], "any", false, false, false, 18), "html", null, true);
             echo "</p>
             
             <div class=\"card-text-content-2\">
                 <p>";
-            // line 20
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "lieu", [], "any", false, false, false, 20), "html", null, true);
+            // line 21
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "lieu", [], "any", false, false, false, 21), "html", null, true);
             echo "</p>
                 <p>";
-            // line 21
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "pays", [], "any", false, false, false, 21), "html", null, true);
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["job"], "pays", [], "any", false, false, false, 22), "html", null, true);
             echo "</p>
             </div>
         </div>
@@ -136,7 +137,7 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['job'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 28
+        // line 29
         echo "
 ";
         
@@ -159,7 +160,7 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
 
     public function getDebugInfo()
     {
-        return array (  140 => 28,  127 => 21,  123 => 20,  117 => 17,  113 => 16,  107 => 13,  101 => 12,  96 => 9,  92 => 8,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  141 => 29,  128 => 22,  124 => 21,  118 => 18,  114 => 17,  108 => 14,  102 => 13,  97 => 10,  93 => 9,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -169,6 +170,7 @@ class __TwigTemplate_efe6d24bb0680729b7913255a2e02d209bc6748c70b40994c8c7e1166c7
 {% block title %}Accueil{% endblock %}
 
 {% block body %}
+
 
 
 {% for job in jobs %}

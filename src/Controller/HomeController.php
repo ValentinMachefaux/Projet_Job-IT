@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\Categories;
 use App\Entity\Jobs;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -20,4 +21,5 @@ class HomeController extends AbstractController
 
         return $this->render('home/index.html.twig', ['jobs' => $jobs]);
     }
+
 }
