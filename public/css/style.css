@@ -22,6 +22,15 @@ nav input{
     margin-left: auto;
     margin-right: auto;
 }
+.href-categ{
+    text-align: center;
+    padding: 15px;
+}
+.href-categ a{
+    text-decoration: none;
+    color: black;
+    
+}
 .card a{
     text-decoration: none;
     color: black;
@@ -38,7 +47,9 @@ nav input{
     text-align: center;
 }
 .jobit{
-    width: 10%;
+    width: 20%;
+    padding: 10px;
+    font-size: 3em;
 }
 .job-contrat{
     display: flex;

@@ -19,7 +19,10 @@ class HomeController extends AbstractController
         $repo = $em->getRepository(Jobs::class);
         $jobs = $repo->findBy([],['updated'=> 'DESC'],10);
 
-        return $this->render('home/index.html.twig', ['jobs' => $jobs]);
+        $repo2 =$em->getRepository(Categories::class);
+        $categories = $repo2->findAll();
+
+        return $this->render('home/index.html.twig', ['jobs' => $jobs, 'categories' => $categories]);
     }
 
 }

@@ -93,6 +93,11 @@ class Jobs
      */
     private $active;
 
+    public function __toString()
+    {
+        return $this->entreprise;
+    }
+
     public function getId(): ?int
     {
         return $this->id;
